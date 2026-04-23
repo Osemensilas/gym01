@@ -5,6 +5,7 @@ import Services from "@/components/sections/Services";
 import Preference from "@/components/sections/Preference";
 import Plans from "@/components/sections/Plans";
 import FinalCall from "@/components/sections/FinalCall";
+import ContactUs from "@/components/sections/ContactUs";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <Services />
     <Preference />
     <Plans />
+    <ContactUs />
     <FinalCall />
     </>
   );
