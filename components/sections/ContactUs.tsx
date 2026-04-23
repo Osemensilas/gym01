@@ -6,32 +6,32 @@ const ContactUs = () => {
         <section className="h-max sm:h-150 w-full px-4 sm:px-10 py-10">
             <div className="h-full w-full flex flex-col sm:flex-row bg-background rounded p-5 gap-10">
                 <div className="w-full sm:w-[40%] h-full flex flex-col justify-between gap-5">
-                    <h3 className="text-xl font-bold text-primary">CONTACT US</h3>
-                    <h2 className="text-2xl font-bold text-header">Get In Touch With Us</h2>
+                    <h3 className="text-xl font-bold text-accent">CONTACT US</h3>
+                    <h2 className="text-2xl font-bold text-accent/50">Get In Touch With Us</h2>
                     <div className="h-[75%] w-full">
                         <ContactForm />
                     </div>
                 </div>
                 <div className="w-full sm:w-[60%] h-full flex flex-col sm:flex-row gap-3">
                     <div className="h-full w-full sm:w-[50%] flex flex-col gap-5">
-                        <h3 className="text-xl font-bold text-header">OUR CONTACT INFO</h3>
-                        <p className="text-text">Have any question about HVAC services? Feel free to reach out to us!</p>
+                        <h3 className="text-xl font-bold text-primary">OUR CONTACT INFO</h3>
+                        <p className="text-accent/50">Have any question about our services? Feel free to reach out to us!</p>
                         <div className="space-y-6">
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa fa-map-marker text-text"></i></span> Location</h3>
-                                <p className="text-text">Lagos Island, Lagos, Nigeria</p>
+                                <h3 className="font-semibold text-lg"><span><i className="fa fa-map-marker text-primary"></i></span> Location</h3>
+                                <p className="text-accent/50">Lagos Island, Lagos, Nigeria</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa fa-phone text-text"></i></span> Phone</h3>
-                                <p className="text-text">+234 704 7880 486</p>
+                                <h3 className="font-semibold text-lg"><span><i className="fa fa-phone text-primary"></i></span> Phone</h3>
+                                <p className="text-accent/50">+234 704 7880 486</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa-regular fa-envelope text-text"></i></span> Email</h3>
-                                <p className="text-text">info@joshlegend.com</p>
+                                <h3 className="font-semibold text-lg"><span><i className="fa-regular fa-envelope text-primary"></i></span> Email</h3>
+                                <p className="text-accent/50">info@joshlegend.com</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa-solid fa-clock text-text"></i></span> Working Hours</h3>
-                                <p className="text-text">Mon - Sat: 8am - 6pm<br />Emergency services available</p>
+                                <h3 className="font-semibold text-lg"><span><i className="fa-solid fa-clock text-primary"></i></span> Working Hours</h3>
+                                <p className="text-accent/50">Mon - Sat: 8am - 6pm<br />Emergency services available</p>
                             </div>
                         </div>
                     </div>
