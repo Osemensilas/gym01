@@ -66,7 +66,7 @@ const Services = () => {
                     </a>
                     <a href="#" target="_blank" className="group dark-bg relative p-4 h-50 w-50 transform transition duration-500 hover:scale-105 flex items-end">
                         <div className="absolute top-0 left-0 h-full w-full">
-                            <Image src="/images/service1.jpg" fill alt="card image" className="object-cover rounded-xl" />
+                            <Image src="/images/service7.jpg" fill alt="card image" className="object-cover rounded-xl" />
                         </div>
                         <div className="w-full h-max relative z-5 flex justify-between items-center text-sm">
                             <p className="group-hover:text-accent transform transition duration-500 text-accent/50 font-bold text-sm">Fexibility & Monility</p>
