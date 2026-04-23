@@ -5,6 +5,7 @@
   --foreground: #171717;
   --accent: #ffffff;
   --primary: #c55d07;
+  --grey: c0c0c0;
 }
 
 @theme inline {
@@ -12,6 +13,7 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-primary: var(--primary);
+  --color-grey: var(--grey);
 }
 
 body {
@@ -34,7 +36,16 @@ body {
   z-index: 10;
 }
 
-.hero::before {
+.choosen {
+  position: relative;
+  background-color: #0f0f0f;
+  overflow: hidden;
+  filter: brightness(1.1) contrast(1.1);
+  z-index: 10;
+}
+
+.hero::before,
+.choosen:before {
   content: "";
   position: absolute;
   inset: 0;

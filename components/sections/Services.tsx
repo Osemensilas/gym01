@@ -3,7 +3,7 @@ import Image from "next/image";
 const Services = () => {
     return ( 
         <>
-        <section className="h-max w-full flex flex-col gap-5 px-10 py-10 bg-background/50">
+        <section className="h-max w-full flex flex-col gap-5 px-10 py-10 bg-foreground">
             <h3 className="text-base text-primary font-bold">OUR SERVICES</h3>
             <h2 className="text-3xl text-accent font-bold">Unlease Your Potential <span className="text-primary">Premium Fitness Service</span> Designed Specifically for you.</h2>
             <div className="h-max w-full flex justify-between items-center">
