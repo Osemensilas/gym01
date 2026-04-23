@@ -13,15 +13,15 @@ const AboutUs = () => {
                     <p className="text-accent/50 text-sm">Year of Excellences</p>
                 </div>
                 <div className="h-max w-max border-r border-accent/50 pr-3">
-                    <h3 className="text-2xl font-bold text-accent">2k<span className="text-primary">+</span></h3>
+                    <h3 className="text-2xl font-bold text-accent">100<span className="text-primary">+</span></h3>
                     <p className="text-accent/50 text-sm">Members</p>
                 </div>
                 <div className="h-max w-max border-r border-accent/50 pr-3">
-                    <h3 className="text-2xl font-bold text-accent">70<span className="text-primary">+</span></h3>
+                    <h3 className="text-2xl font-bold text-accent">10<span className="text-primary">+</span></h3>
                     <p className="text-accent/50 text-sm">Weekly Classes</p>
                 </div>
                 <div className="h-max w-max">
-                    <h3 className="text-2xl font-bold text-accent">100<span className="text-primary">+</span></h3>
+                    <h3 className="text-2xl font-bold text-accent">10<span className="text-primary">+</span></h3>
                     <p className="text-accent/50 text-sm">Expert Trainers</p>
                 </div>
             </div>
