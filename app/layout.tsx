@@ -18,8 +18,20 @@ export default function RootLayout({
       lang="en"
       className=""
     >
-      <Header />
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-pap2kZ7YHQyF..."
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      </head>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

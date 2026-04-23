@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #2c2b2b;
   --foreground: #171717;
+  --accent: #ffffff;
+  --primary: #c55d07;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
 }
 
 body {
@@ -18,15 +20,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .hero {
   position: relative;
   height: 100vh;
-  background: url('/images/runner.png') no-repeat right center/contain;
+  width: 100vw;
+  background: url('/images/hero1.png') no-repeat left center/cover;
   background-color: #0f0f0f;
   overflow: hidden;
-  backdrop-filter: blur(2px);
+  filter: brightness(1.1) contrast(1.1);
+  z-index: 10;
 }
 
 .hero::before {
@@ -34,18 +39,17 @@ body {
   position: absolute;
   inset: 0;
 
-  /* dark + orange glow */
   background: linear-gradient(
-    90deg,
-    rgba(15, 15, 15, 0.95) 0%,
-    rgba(15, 15, 15, 0.8) 40%,
-    rgba(255, 102, 0, 0.4) 100%
+    180deg,
+    rgba(15, 15, 15, 0.6) 0%,
+    rgba(15, 15, 15, 0.4) 40%,
+    rgba(255, 102, 0, 0.25) 100%
   );
 
   z-index: 1;
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   position: absolute;
   right: 0;
@@ -60,12 +64,15 @@ body {
   );
 
   z-index: 1;
-}
+} */
 
-.content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  padding: 100px;
-  max-width: 600px;
+.dark-bg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  opacity: 0.4;
 }
