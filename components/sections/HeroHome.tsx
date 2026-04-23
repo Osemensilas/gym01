@@ -3,20 +3,35 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 const HeroHome = () => {
 
     const pathname = usePathname();
 
+    const [openNav, setOpenNav] = useState(false);
+
+    const toggleNav = () => {
+        setOpenNav(!openNav);
+    }
+
     return ( 
         <>
-        <section className="hero">
-            <header className={`relative z-10 h-20 w-full flex items-center justify-between px-10`}>
-                <div className="h-max w-max">
-                    <div className="text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
+        <section className="hero h-max w-screen">
+            <header className={`relative z-10 h-20 w-full sm:px-10 flex
+                ${openNav ? "fixed h-screen top-0 left-0 px-0" : "px-4 justify-between items-center"}
+                `}>
+                <div className={`"h-max w-max
+                    ${openNav ? "hidden" : ""}
+                    `}>
+                    <div className="text-xl sm:text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
                 </div>
-                <div className="h-max w-max flex items-center gap-40">
-                    <ul className="h-max w-max flex items-center gap-5">
+                <div className={`sm:w-max flex items-center gap-40
+                    ${openNav ? "flex-col w-4/5 bg-background h-screen" : "h-max hidden sm:flex"}
+                    `}>
+                    <ul className={`h-max sm:flex gap-5
+                        ${openNav ? "flex flex-col w-full items-start p-5" : "items-center hidden w-max"}
+                        `}>
                         <li className="h-max w-max flex flex-col gap-0.5">
                             <Link href="/" className={`font-semi-bold
                                 ${pathname === "/" ? "text-primary" : "text-accent"}
@@ -50,13 +65,21 @@ const HeroHome = () => {
                                 `}></span>
                         </li>
                     </ul>
-                    <div className="">
-                        <button className="cursor-pointer py-2 px-5 rounded-full bg-primary text-accent font-bold text-base">Free Trial</button>
+                    <div className={`${openNav ? "w-full h-max flex px-5" : ""}`}>
+                        <button className={`cursor-pointer py-2 px-5 rounded-full bg-primary text-accent font-bold text-base
+                            ${openNav ? "w-full" : ""}
+                            `}>Free Trial</button>
                     </div>
                 </div>
+                <div onClick={toggleNav} className={`${openNav ? "w-1/5 h-screen bg-background/50" : "hidden"}`}></div>
+                <div onClick={toggleNav} className={`ham-container h-10 w-10 block sm:hidden
+                    ${openNav ? "hidden" : ""}
+                    `}>
+                    <div className="hamburger"></div>
+                </div>
             </header>
-            <div className="h-[calc(100vh-80px)] w-full flex items-center justify-start px-10">
-                <div className="h-max w-[60%] z-10 relative flex flex-col gap-5">
+            <div className="h-max sm:h-[calc(100vh-80px)] w-full flex items-center justify-start px-4 sm:px-10 py-10">
+                <div className="h-max w-full sm:w-[60%] z-10 relative flex flex-col gap-5">
                     <h1 className="text-accent text-5xl font-bold">Push your Limits with us</h1>
                     <p className="text-accent text-base">From beginner to advanced, we have the perfect program for you.</p>
                     <div className="h-max w-full">
@@ -105,7 +128,7 @@ const HeroHome = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="h-max w-3/5 flex flex-wrap gap-3 mt-5">
+                        <div className="h-max w-full sm:w-3/5 flex flex-wrap gap-3 mt-5">
                             <span className="border border-accent/50 text-accent/50 text-xs py-2 px-3 rounded-full">Personal Trainer</span>
                             <span className="border border-accent/50 text-accent/50 text-xs py-2 px-3 rounded-full">Group Class</span>
                             <span className="border border-accent/50 text-accent/50 text-xs py-2 px-3 rounded-full">Strength</span>

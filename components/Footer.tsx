@@ -5,11 +5,11 @@ import Link from 'next/link';
 const Footer = () => {
     return ( 
         <>
-        <footer className="h-max w-full bg-foreground px-10 py-10">
-            <div className="h-max w-full flex items-start justify-between">
-                <div className="h-max w-max flex flex-col gap-5">
+        <footer className="h-max w-full bg-foreground px-4 sm:px-10 py-10">
+            <div className="h-max w-full flex flex-col sm:flex-row items-start justify-between">
+                <div className="h-max w-full sm:w-max flex flex-col justify-center items-center gap-5">
                     <div className="h-max w-max">
-                        <div className="text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
+                        <div className="text-xl sm:text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
                     </div>
                     <div className="h-max w-max">
                         <ul className="hmax w-max flex items-center gap-4">
@@ -36,26 +36,25 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="h-max w-max">
-                    <h3 className="text-xl font-bold text-header mb-3">Main Links</h3>
-                        <ul className="h-max w-max flex items-start gap-10">
-                            <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/"}>Home</Link>
-                            </li>
-                            <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/services"}>Services</Link>
-                            </li>
-                            <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/about-us"}>About Us</Link>
-                            </li>
-                            <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/contact-us"}>Contact Us</Link>
-                            </li>
-                        </ul>
+                <div className="h-max w-full sm:w-max my-5 sm:my-0">
+                    <ul className="h-max w-full sm:w-max flex items-center justify-center sm:items-start gap-3 sm:gap-10">
+                        <li className="text-accent text-base hover:text-primary transition-colors duration-300">
+                            <Link href={"/"}>Home</Link>
+                        </li>
+                        <li className="text-accent text-base hover:text-primary transition-colors duration-300">
+                            <Link href={"/services"}>Services</Link>
+                        </li>
+                        <li className="text-accent text-base hover:text-primary transition-colors duration-300">
+                            <Link href={"/about-us"}>About Us</Link>
+                        </li>
+                        <li className="text-accent text-base hover:text-primary transition-colors duration-300">
+                            <Link href={"/contact-us"}>Contact Us</Link>
+                        </li>
+                    </ul>
                 </div>
-                <div className="h-max w-max">
-                    <form action="/" onSubmit={(e) => e.preventDefault()} className="">
-                        <h2 className="text-xl font-bold text-accent mb-3">Subscribe to our newsletter</h2>
+                <div className="h-max w-full sm:w-max mb-5 sm:mb-0">
+                    <form action="/" onSubmit={(e) => e.preventDefault()} className="w-full sm:w-max">
+                        <h2 className="text-xl text-center sm:text-start font-bold text-accent mb-3">Subscribe to our newsletter</h2>
                         <div className="h-max">
                             <input type="email" placeholder="Enter your email" className="w-full text-accent px-4 py-2 rounded-md border border-grey text-sm" required />
                         </div>

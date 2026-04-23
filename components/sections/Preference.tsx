@@ -28,15 +28,15 @@ const Preference = () => {
 
     return ( 
         <>
-        <section className="h-max w-full flex flex-col gap-5 px-10 py-10">
+        <section className="h-max w-full flex flex-col gap-5 px-4 sm:px-10 py-10">
             <h3 className="text-base text-primary font-bold">PREFERENCE</h3>
             <h2 className="text-3xl text-accent font-bold">Why Choose Us for Your <span className="text-primary">Fitness</span> Journey?</h2>
-            <div className="h-max w-full flex gap-5 items-start">
-                <div className="relative h-100 w-full">
+            <div className="h-max w-full flex flex-col sm:flex-row gap-5 items-start">
+                <div className="relative h-100 w-full sm:w-1/2">
                     <Image src="/images/preference2.jpg" alt="why image" fill className="object-cover rounded" />
                 </div>
-                <div className="h-100 w-full flex flex-col gap-5">
-                    <div className="h-max w-full px-10 py-5 bg-foreground rounded">
+                <div className="h-100 w-full sm:w-1/2 flex flex-col gap-5">
+                    <div className="h-max w-full px-4 sm:px-10 py-5 bg-foreground rounded">
                         <div className="h-max w-full flex items-center justify-between">
                             <h3 className="text-primary text-xl font-semi-bold">State-of-the-art <span className="text-accent">Equipment</span></h3>
                             <button onClick={seeDetails} className="h-max w-max cursor-pointer" type="button" title="dropdown">
@@ -47,7 +47,7 @@ const Preference = () => {
                             <p className="text-sm text-accent/70">Our facility is equipped with the latest fitness machines and tools to ensure efficient workouts, improved performance, and a comfortable training experience.</p>
                         </div>
                     </div>
-                    <div className="h-max w-full px-10 py-5 bg-foreground rounded">
+                    <div className="h-max w-full px-4 sm:px-10 py-5 bg-foreground rounded">
                         <div className="h-max w-full flex items-center justify-between">
                             <h3 className="text-primary text-xl font-semi-bold">Expert <span className="text-accent">Trainer</span></h3>
                             <button onClick={seeDetails} className="h-max w-max cursor-pointer" type="button" title="dropdown">
@@ -58,7 +58,7 @@ const Preference = () => {
                             <p className="text-sm text-accent/70">Train with experienced professionals dedicated to helping you achieve your fitness goals safely and effectively.</p>
                         </div>
                     </div>
-                    <div className="h-max w-full px-10 py-5 bg-foreground rounded">
+                    <div className="h-max w-full px-4 sm:px-10 py-5 bg-foreground rounded">
                         <div className="h-max w-full flex items-center justify-between">
                             <h3 className="text-primary text-xl font-semi-bold">Wide Range of <span className="text-accent">Classes</span></h3>
                             <button onClick={seeDetails} className="h-max w-max cursor-pointer" type="button" title="dropdown">
@@ -69,7 +69,7 @@ const Preference = () => {
                             <p className="text-sm text-accent/70">Choose from a variety of classes designed to suit every fitness level, from strength training and cardio to group sessions that keep you motivated.</p>
                         </div>
                     </div>
-                    <div className="h-max w-full px-10 py-5 bg-foreground rounded">
+                    <div className="h-max w-full px-4 sm:px-10 py-5 bg-foreground rounded">
                         <div className="h-max w-full flex items-center justify-between">
                             <h3 className="text-primary text-xl font-semi-bold">Welcoming <span className="text-accent">Community</span></h3>
                             <button onClick={seeDetails} className="h-max w-max cursor-pointer" type="button" title="dropdown">
