@@ -7,7 +7,7 @@ const Preference = () => {
     const seeDetails = (e: React.MouseEvent<HTMLDivElement>) => {
         const btnClick = e.currentTarget;
         const btnIcon = btnClick.children[0];
-        const cardClicked = btnClick.parentElement.parentElement;
+        const cardClicked = btnClick.parentElement!.parentElement;
 
         if (btnIcon.classList.contains("fa-chevron-down")){
             btnIcon.classList.remove("fa-chevron-down");
@@ -19,10 +19,10 @@ const Preference = () => {
             btnIcon.classList.remove("text-primary");
         }
 
-        if (cardClicked.children[1].classList.contains("hidden")){
-            cardClicked.children[1].classList.remove("hidden");
+        if (cardClicked!.children[1].classList.contains("hidden")){
+            cardClicked!.children[1].classList.remove("hidden");
         }else{
-            cardClicked.children[1].classList.add("hidden");
+            cardClicked!.children[1].classList.add("hidden");
         }
     }
 
