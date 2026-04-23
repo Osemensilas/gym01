@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Preference = () => {
 
-    const seeDetails = (e: React.MouseEvent<HTMLDivElement>) => {
+    const seeDetails = (e: React.MouseEvent<HTMLButtonElement>) => {
         const btnClick = e.currentTarget;
         const btnIcon = btnClick.children[0];
         const cardClicked = btnClick.parentElement!.parentElement;
