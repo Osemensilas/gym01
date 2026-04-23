@@ -18,19 +18,19 @@ const ContactUs = () => {
                         <p className="text-accent/50">Have any question about our services? Feel free to reach out to us!</p>
                         <div className="space-y-6">
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa fa-map-marker text-primary"></i></span> Location</h3>
+                                <h3 className="font-semibold text-lg text-accent"><span><i className="fa fa-map-marker text-primary"></i></span> Location</h3>
                                 <p className="text-accent/50">Lagos Island, Lagos, Nigeria</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa fa-phone text-primary"></i></span> Phone</h3>
+                                <h3 className="font-semibold text-lg text-accent"><span><i className="fa fa-phone text-primary"></i></span> Phone</h3>
                                 <p className="text-accent/50">+234 704 7880 486</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa-regular fa-envelope text-primary"></i></span> Email</h3>
+                                <h3 className="font-semibold text-lg text-accent"><span><i className="fa-regular fa-envelope text-primary"></i></span> Email</h3>
                                 <p className="text-accent/50">info@joshlegend.com</p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-lg"><span><i className="fa-solid fa-clock text-primary"></i></span> Working Hours</h3>
+                                <h3 className="font-semibold text-lg text-accent"><span><i className="fa-solid fa-clock text-primary"></i></span> Working Hours</h3>
                                 <p className="text-accent/50">Mon - Sat: 8am - 6pm<br />Emergency services available</p>
                             </div>
                         </div>
