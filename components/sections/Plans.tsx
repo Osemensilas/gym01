@@ -4,7 +4,7 @@ const Plans = () => {
         <section className="h-max w-full flex flex-col gap-5 px-4 sm:px-10 py-10 bg-foreground">
             <h3 className="text-base text-primary font-bold">PAYMENT OPTIONS</h3>
             <h2 className="text-3xl text-accent font-bold">Flexible <span className="text-primary">Payment Options</span> for Everyone.</h2>
-            <p className="text-center text-accent"><span className="text-primary font-bold">Registration Fee: ₦3,000</span> — One-time payment to get started</p>
+            <p className="text-accent"><span className="text-primary font-bold">Registration Fee: ₦3,000</span> — One-time payment to get started</p>
             <div className="h-max w-full flex flex-col sm:flex-row items-center justify-between gap-5 pt-5">
                 <div className="h-max w-full sm:w-[30%] bg-background rounded-xl p-5">
                     <h3 className="text-xl text-center text-accent mb-5 font-bold">Daily Plan</h3>
