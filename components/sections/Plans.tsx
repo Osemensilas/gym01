@@ -24,7 +24,7 @@ const Plans = () => {
                         </div>
                         <div className="h-max w-full items-center flex gap-2">
                             <i className="fa-solid fa-check text-green-500"></i>
-                            <p className="text-accent text-sm">Couach Support</p>
+                            <p className="text-accent text-sm">Coach Support</p>
                         </div>
                     </div>
                     <button className="py-2 px-2 w-full bg-foreground rounded text-center text-accent text-base cursor-pointer" type="button" title="plan button">Get Started</button>
@@ -48,7 +48,7 @@ const Plans = () => {
                         </div>
                         <div className="h-max w-full items-center flex gap-2">
                             <i className="fa-solid fa-check text-green-500"></i>
-                            <p className="text-accent text-sm">Couach Support</p>
+                            <p className="text-accent text-sm">Coach Support</p>
                         </div>
                     </div>
                     <button className="py-2 px-2 w-full bg-foreground rounded text-center text-accent text-base cursor-pointer" type="button" title="plan button">Get Started</button>
@@ -72,7 +72,7 @@ const Plans = () => {
                         </div>
                         <div className="h-max w-full items-center flex gap-2">
                             <i className="fa-solid fa-check text-green-500"></i>
-                            <p className="text-accent text-sm">Couach Support</p>
+                            <p className="text-accent text-sm">Coach Support</p>
                         </div>
                     </div>
                     <button className="relative z-10 py-2 px-2 w-full bg-primary/50 rounded text-center text-accent text-base cursor-pointer" type="button" title="plan button">Get Started</button>

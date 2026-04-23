@@ -13,7 +13,7 @@ const Header = () => {
             ${pathname === "/" ? "hidden" : ""}
             `}>
             <div className="h-max w-max">
-                <div className="text-3xl text-accent font-bold">APEX<span className="text-primary">GYM</span></div>
+                <div className="text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
             </div>
             <div className="h-max w-max flex items-center gap-40">
                 <ul className="h-max w-max flex items-center gap-5">

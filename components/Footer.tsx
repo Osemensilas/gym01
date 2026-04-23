@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="h-max w-full flex items-start justify-between">
                 <div className="h-max w-max flex flex-col gap-5">
                     <div className="h-max w-max">
-                        <div className="text-3xl text-accent font-bold">APEX<span className="text-primary">GYM</span></div>
+                        <div className="text-3xl text-accent font-bold">GREATHONEY<span className="text-primary">2</span>FITNESS</div>
                     </div>
                     <div className="h-max w-max">
                         <ul className="hmax w-max flex items-center gap-4">
@@ -43,13 +43,13 @@ const Footer = () => {
                                 <Link href={"/"}>Home</Link>
                             </li>
                             <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/services"}>Service</Link>
+                                <Link href={"/services"}>Services</Link>
                             </li>
                             <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/shop-by-brand"}>About Us</Link>
+                                <Link href={"/about-us"}>About Us</Link>
                             </li>
                             <li className="text-accent text-base hover:text-primary transition-colors duration-300">
-                                <Link href={"/pharmacy"}>Contact Us</Link>
+                                <Link href={"/contact-us"}>Contact Us</Link>
                             </li>
                         </ul>
                 </div>
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
             <div className="h-max w-full">
                 <p className="text-center text-accent/50 text-sm">
-                    &copy; {new Date().getFullYear()} Apex Gym. All rights reserved.
+                    &copy; {new Date().getFullYear()} GreatHoney2Fitness. All rights reserved.
                 </p>
                 <div className="w-full h-max flex items-center justify-center mt-5 text-sm text-accent/50 gap-3">
                     <Link href={"/terms-of-use"}>Terms of Use</Link>

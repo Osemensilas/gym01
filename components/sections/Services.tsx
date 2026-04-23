@@ -5,7 +5,7 @@ const Services = () => {
         <>
         <section className="h-max w-full flex flex-col gap-5 px-10 py-10 bg-foreground">
             <h3 className="text-base text-primary font-bold">OUR SERVICES</h3>
-            <h2 className="text-3xl text-accent font-bold">Unlease Your Potential <span className="text-primary">Premium Fitness Service</span> Designed Specifically for you.</h2>
+            <h2 className="text-3xl text-accent font-bold">Unleash Your Potential <span className="text-primary">Premium Fitness Service</span> Designed Specifically for you.</h2>
             <div className="h-max w-full flex justify-between items-center">
                 <p className="text-accent/50 text-base">Train in a motivating environment with modern equipment and expert guidance tailored to your goals. Whether you are building strength, losing weight, or improving endurance, we’re here to help you achieve real, lasting results.</p>
                 <div className="h-max w-2/5 flex justify-end items-center gap-5">
@@ -69,7 +69,7 @@ const Services = () => {
                             <Image src="/images/service7.jpg" fill alt="card image" className="object-cover rounded-xl" />
                         </div>
                         <div className="w-full h-max relative z-5 flex justify-between items-center text-sm">
-                            <p className="group-hover:text-accent transform transition duration-500 text-accent/50 font-bold text-sm">Fexibility & Monility</p>
+                            <p className="group-hover:text-accent transform transition duration-500 text-accent/50 font-bold text-sm">Fexibility & Mobility</p>
                             <i className="fa-solid fa-up-right-from-square text-accent/50 group-hover:text-primary transform transition duration-500"></i>
                         </div>
                     </a>
