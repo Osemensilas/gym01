@@ -61,7 +61,7 @@ const HeroHome = () => {
                     <h1 className="text-accent text-5xl font-bold">Push your Limits with us</h1>
                     <p className="text-accent text-base">From beginner to advanced, we have the perfect program for you.</p>
                     <div className="h-max w-full">
-                        <button className="cursor-pointer py-2 px-5 rounded-full bg-primary text-accent font-bold text-base" type="button" title="Join Btn">Join Now <i class="fa-solid fa-angles-right ml-2"></i></button>
+                        <button className="cursor-pointer py-2 px-5 rounded-full bg-primary text-accent font-bold text-base" type="button" title="Join Btn">Join Now <i className="fa-solid fa-angles-right ml-2"></i></button>
                     </div>
                     <div className="w-full h-max flex flex-col items-start justify-between gap-3 p-3">
                         <div className="h-max w-max flex">
