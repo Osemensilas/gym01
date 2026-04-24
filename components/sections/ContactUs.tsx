@@ -27,7 +27,7 @@ const ContactUs = () => {
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg text-accent"><span><i className="fa-regular fa-envelope text-primary"></i></span> Email</h3>
-                                <p className="text-accent/50">info@greayhoney2fitness.com</p>
+                                <p className="text-accent/50">info@greathoney2fitness.com</p>
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg text-accent"><span><i className="fa-solid fa-clock text-primary"></i></span> Working Hours</h3>
