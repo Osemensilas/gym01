@@ -37,7 +37,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="h-full w-full sm:w-[50%]">
-                        <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d3.379205315316789!3d6.524379995123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf1234567890%3A0xabcdef1234567890!2sLagos%20Island%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="300" className="border-0 rounded-xl h-full w-full" allowFullScreen loading="lazy"></iframe>
+                        <iframe title="Google Map" src="https://www.google.com/maps?q=12+Adebowale+Crescent,+Aboru,+Iyana+Ipaja,+Lagos,+Nigeria&output=embed" width="100%" height="300" className="border-0 rounded-xl h-full w-full" allowFullScreen loading="lazy" />
                     </div>
                 </div>
             </div>
