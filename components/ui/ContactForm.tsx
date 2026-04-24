@@ -9,7 +9,7 @@ const ContactForm = () => {
             <div className="h-max w-full flex flex-col sm:flex-row gap-4">
                 <input type="tel" placeholder="Phone Number" className="w-full h-10 px-3 border border-accent/50 outline-none rounded text-sm text-accent/50" />
             </div>
-            <textarea placeholder="Your Message" className="min-w-full max-w-full p-3 border border-accent/50 outline-none rounded h-28 text-sm" />
+            <textarea placeholder="Your Message" className="min-w-full max-w-full p-3 border border-accent/50 outline-none rounded min-h-28 max-h-28 text-sm text-accent/50" />
             <button type="submit" className="w-full bg-primary text-accent p-2 rounded font-semibold cursor-pointer">Send Now</button>
         </form>
         </>
