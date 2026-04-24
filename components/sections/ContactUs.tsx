@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <>
         <section className="h-max sm:h-150 w-full px-4 sm:px-10 py-10">
-            <div className="h-full w-full flex flex-col sm:flex-row bg-background rounded p-5 gap-10">
+            <div className="h-full w-full flex flex-col sm:flex-row bg-background rounded p-0 sm:p-5 gap-10">
                 <div className="w-full sm:w-[40%] h-full flex flex-col justify-between gap-5">
                     <h3 className="text-base text-primary font-bold">CONTACT US</h3>
                     <h2 className="text-3xl text-accent font-bold">Get In Touch With Us</h2>
