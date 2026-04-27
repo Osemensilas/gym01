@@ -146,13 +146,6 @@ const ContactPage = () => {
         </button>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-[#1a1a1a] border-t border-[#2a2a2a] px-6 md:px-20 py-10">
-        <p className="text-gray-400 text-sm text-center">
-          © 2026 GreatHoney2Fitness
-        </p>
-      </footer>
-
       {/* Tailwind Reusable Styles */}
       <style jsx>{`
         .input {
