@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import Link from "next/link";
 
 const ContactPage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -18,25 +17,6 @@ const ContactPage = () => {
 
   return (
     <div className="bg-[#111] text-white">
-
-      {/* NAV */}
-      <nav className="sticky top-0 z-50 backdrop-blur bg-[#111]/95 border-b border-[#2a2a2a] h-[70px] flex items-center justify-between px-6 md:px-12">
-        <Link href="/" className="font-bebas text-2xl tracking-widest">
-          GREATHONEY<span className="text-orange-500">2</span>FITNESS
-        </Link>
-
-        <ul className="hidden md:flex gap-8 text-sm text-gray-400">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="#">Services</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/contact" className="text-white border-b-2 border-orange-500 pb-1">Contact</Link></li>
-        </ul>
-
-        <button className="bg-orange-500 hover:bg-orange-600 px-5 py-2 rounded-full text-sm font-semibold">
-          Free Trial
-        </button>
-      </nav>
-
       {/* HERO */}
       <section className="text-center px-6 md:px-20 py-20 bg-gradient-to-br from-[#1a1a1a] via-[#111] to-[#1c0e00] border-b border-[#2a2a2a]">
         <span className="text-orange-500 text-xs tracking-widest font-bold uppercase block mb-3">
@@ -46,7 +26,7 @@ const ContactPage = () => {
           Get In <span className="text-orange-500">Touch</span> With Us
         </h1>
         <p className="text-gray-400 max-w-xl mx-auto">
-          Have any questions about our services? We're here to help you start or continue your fitness journey.
+          Have any questions about our services? We are here to help you start or continue your fitness journey.
         </p>
       </section>
 
@@ -65,13 +45,13 @@ const ContactPage = () => {
 
           <input className="input mb-4" placeholder="Phone Number" />
 
-          <select className="input mb-4">
+          <select title="membership" name="membership" className="input mb-4">
             <option>Select subject</option>
             <option>Membership Inquiry</option>
             <option>Personal Training</option>
           </select>
 
-          <textarea className="input mb-4 min-h-[120px]" placeholder="Message"></textarea>
+          <textarea className="input mb-4 min-h-30" placeholder="Message"></textarea>
 
           <button onClick={handleSubmit} className="w-full bg-orange-500 hover:bg-orange-600 py-3 rounded font-bold">
             Send Now

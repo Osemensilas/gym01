@@ -7,19 +7,19 @@ import { useState } from "react";
 const services = [
   {
     title: "Personal Trainer",
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    img: "/",
     desc: "Work one-on-one with certified trainers who create personalized programs tailored to your goals.",
     tags: ["Custom Plan", "1-on-1 Sessions", "Goal Setting"],
   },
   {
     title: "Group Class",
-    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80",
+    img: "/",
     desc: "Train alongside like-minded people in a fun, motivating atmosphere.",
     tags: ["Yoga", "HIIT", "Zumba"],
   },
   {
     title: "Strength Training",
-    img: "https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=600&q=80",
+    img: "/",
     desc: "Build power and muscle with our comprehensive strength programs.",
     tags: ["Powerlifting", "Hypertrophy", "Compound Lifts"],
   },
@@ -86,7 +86,7 @@ export default function ServicesPage() {
               key={i}
               className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl overflow-hidden hover:-translate-y-2 transition"
             >
-              <div className="relative h-[220px]">
+              <div className="relative h-55">
                 <Image src={s.img} alt={s.title} fill className="object-cover" />
               </div>
 
@@ -120,7 +120,7 @@ export default function ServicesPage() {
       {/* WHY SECTION */}
       <section className="bg-[#1a1a1a] py-20 px-6 border-y border-[#2a2a2a]">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative h-[300px] md:h-[420px] rounded-xl overflow-hidden">
+          <div className="relative h-75 md:h-105 rounded-xl overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80"
               alt="gym"

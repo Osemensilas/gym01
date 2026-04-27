@@ -41,24 +41,6 @@ export default function AboutPage() {
   return (
     <main className="bg-[#111] text-white min-h-screen">
 
-      {/* NAV */}
-      <nav className="sticky top-0 z-50 bg-[#111]/95 backdrop-blur border-b border-[#2a2a2a] px-6 h-[70px] flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-widest">
-          GREATHONEY<span className="text-orange-500">2</span>FITNESS
-        </Link>
-
-        <div className="hidden md:flex gap-8 text-sm text-gray-400">
-          <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/about" className="text-white border-b-2 border-orange-500 pb-1">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-
-        <button className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
-          Free Trial
-        </button>
-      </nav>
-
       {/* HERO */}
       <section className="text-center py-20 px-6 border-b border-[#2a2a2a] bg-gradient-to-br from-[#1a1a1a] via-[#111] to-[#1c0e00]">
         <span className="text-orange-500 text-xs tracking-widest uppercase font-bold">
@@ -74,7 +56,7 @@ export default function AboutPage() {
 
       {/* ABOUT INTRO */}
       <section className="grid md:grid-cols-2 gap-10 px-6 py-20 border-b border-[#2a2a2a]">
-        <div className="relative h-[280px] md:h-[460px] rounded-xl overflow-hidden">
+        <div className="relative h-70 md:h-115 rounded-xl overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80"
             alt="gym"
@@ -123,7 +105,7 @@ export default function AboutPage() {
           </h2>
         </div>
 
-        <div className="relative h-[300px] md:h-[420px] rounded-xl overflow-hidden">
+        <div className="relative h-75 md:h-[105 rounded-xl overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80"
             alt="gym"
@@ -199,7 +181,7 @@ export default function AboutPage() {
               key={i}
               className="bg-[#111] border border-[#2a2a2a] rounded-xl overflow-hidden hover:-translate-y-2 hover:border-orange-500 transition"
             >
-              <div className="relative h-[220px]">
+              <div className="relative h-55">
                 <Image src={t.img} alt={t.name} fill className="object-cover" />
               </div>
 
